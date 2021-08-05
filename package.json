@@ -1,0 +1,49 @@
+{
+  "name": "react-crossword-example",
+  "homepage": "hello",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@jaredreisinger/react-crossword": "^2.3.1",
+    "font-awesome": "^4.7.0",
+    "immer": "^7.0.8",
+    "react-calendly": "^2.2.1",
+    "react-ga": "^3.3.0",
+    "react-is": "^17.0.2",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync --delete --acl public-read --profile personal build s3://thelittleone.rocks/hello/",
+    "invalidate": "aws cloudfront create-invalidation --profile personal --distribution-id E2ZW4I0YCE6B7R --paths \"/*\" | cat",
+    "release": "npm run build && npm run deploy && npm run invalidate"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

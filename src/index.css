@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+  font-family: hero-new, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#hello {
+  font-family: rig-solid-medium-halftone, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+}
+
+.datetable tbody tr:first-child td:first-child {
+  border-right: 2px solid black;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day {
+  font-size: 4em;
+}
+
+.month {
+  font-size: 1.3em;
+}
+
+.chatdivtext {
+  flex: 0 0 300px;
+}
+
+.overlaydiv {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background-color: #ded6d6;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+.overlaydiv:hover {
+  /* margin-top: 120px; */
+  opacity: 0.8;
+}
+
+.chatdiv {
+  width: 300px;
+  height: 500px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .chatdivtext {
+    width: 100%;
+  }
+  .overlaywidth {
+    position:relative;
+  }
+  .overlaydiv {
+    width: 100%;
+  }
+  .chatdiv {
+    width: 100%;
+  }
+}
+
+
+
+#subhello {
+  font-size: 1.4em;
+  margin-block-end: 0;
+}
+
+i.fa,
+i.fas,
+.fa {
+  font-weight: 900;
+  font-family: FontAwesome;
+}
+
+#dashes {
+  margin-block-start: 0.25em;
+  margin-block-end: 1.25em;
+  font-size: 3em;
+}
+
+p,
+.clue {
+  /* font-family: hero-new, sans-serif; */
+  font-weight: 300;
+  font-style: normal;
+}
+
+.clue:nth-child(11) {
+  display: none;
+}
+
+
+
+g:nth-child(18)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(19)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(20)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(21)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(22)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(23)> rect {
+  fill: black;
+}
+g:nth-child(24)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(25)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(26)> rect {
+  fill: rgb(225, 236, 250);
+}
+g:nth-child(27)> rect {
+  fill: rgb(225, 236, 250);
+}
+
+.header {
+  font-family: hero-new, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crossword {
+  margin-top: 120px !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  padding: 5px;
+}
+p {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  #hello {
+    font-size: 4em;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    justify-items: center;
+  }
+
+  li:nth-child(1) {
+    grid-column-start: 2;
+  }
+  li:nth-child(2) {
+    margin-left: auto;
+    max-width: 300px;
+  }
+  .imgdiv {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .rightbanner {
+    margin: -32px;
+  }
+  .imgdiv {
+    position: absolute;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #fdf7f4;
+  text-align: center;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #000000;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #3b3b3b;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  color: #fff;
+  background-color: #555;
+}
+
+@media all and (max-width: 30em) {
+  .button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
