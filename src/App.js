@@ -428,13 +428,13 @@ function App() {
         <p>
           {" "}
           Made with <span style={{ color: "#e25555" }}>&hearts;</span> by mom
-          and dad.
+          and dad.<br/>
           <span style={{ fontSize: "1.25em" }}>
             <FontAwesomeIcon icon={faGithub} />
           </span>  <a
             href="https://github.com/wdvr/babycard"
             onClick={onGithubOpen}
-          />
+          >Source code</a>
         </p>
       </Footer>
     </div>
